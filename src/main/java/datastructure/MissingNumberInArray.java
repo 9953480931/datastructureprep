@@ -6,13 +6,6 @@ import java.util.List;
 
 public class MissingNumberInArray {
 	List<Integer> misingNumberList;
-	
-	MissingNumberInArray() {
-		
-	}
-    MissingNumberInArray(int[] arrNum) {
-		
-	}
 	public List<Integer> missingNumbers(int[] nums){
 		int missingNum;
 		int temp =0;
@@ -34,7 +27,7 @@ public class MissingNumberInArray {
 public static void main(String[] args) {
 	int[] arr = {6,7,8,19,41,56,1,2,4};
 	Arrays.sort(arr);
-	MissingNumberInArray mna = new MissingNumberInArray(arr);
+	MissingNumberInArray mna = new MissingNumberInArray();
 	System.out.println(mna.missingNumbers(arr));
 }
 }
